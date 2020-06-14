@@ -2,6 +2,9 @@
 
 public class Enemy : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject _cloudParticlePrefab;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Bird hittedBird = collision.collider.GetComponent<Bird>();
@@ -9,7 +12,11 @@ public class Enemy : MonoBehaviour
         // Bird hits current enemy
         if (hittedBird != null)
         {
+            Instantiate(_cloudParticlePrefab, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
+
+            return;
         }
 
         Enemy hittedEnemy = collision.collider.GetComponent<Enemy>();
@@ -22,6 +29,8 @@ public class Enemy : MonoBehaviour
 
         if(collision.contacts[0].normal.y < -0.5f)
         {
+            Instantiate(_cloudParticlePrefab, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }
