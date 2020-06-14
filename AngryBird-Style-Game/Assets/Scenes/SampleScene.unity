@@ -674,6 +674,7 @@ GameObject:
   - component: {fileID: 498743596}
   - component: {fileID: 498743595}
   - component: {fileID: 498743594}
+  - component: {fileID: 498743599}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -811,6 +812,18 @@ Transform:
   m_Father: {fileID: 1195688916}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &498743599
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 498743593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5195e348bab323a49b4e2f9904e6cea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1125,6 +1138,7 @@ GameObject:
   - component: {fileID: 635952352}
   - component: {fileID: 635952351}
   - component: {fileID: 635952350}
+  - component: {fileID: 635952354}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Untagged
@@ -1262,6 +1276,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &635952354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 635952348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5195e348bab323a49b4e2f9904e6cea1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &737941142
 GameObject:
   m_ObjectHideFlags: 0
