@@ -563,7 +563,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _launchForce: 300
-  _birdGroundthresholdTime: 2
+  _birdGroundthresholdTime: 1
 --- !u!120 &454440882
 LineRenderer:
   m_ObjectHideFlags: 0

@@ -32,10 +32,10 @@ public class Bird : MonoBehaviour
             _timeSittingAround += Time.deltaTime;
         }
 
-        if (transform.position.y > 10  ||
+        if (transform.position.y > 20  ||
             transform.position.y < -10 ||
             transform.position.x > 10  ||
-            transform.position.x < -10 ||
+            transform.position.x < -25 ||
             _timeSittingAround > _birdGroundthresholdTime)
         {
             string currentSceneName = SceneManager.GetActiveScene().name;
